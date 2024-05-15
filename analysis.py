@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix
 
-file_directory = ""
+file_directory = os.getcwd()
 file_name = "data.csv"
 file_path = os.path.join(file_directory, file_name)
 
