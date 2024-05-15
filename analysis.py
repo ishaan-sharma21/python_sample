@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -5,7 +6,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix
 
-df = pd.read_csv(r"C:\Users\eesha\Desktop\morg-proj\data.csv")
+file_directory = ""
+file_name = "data.csv"
+file_path = os.path.join(file_directory, file_name)
+
+df = pd.read_csv(file_path)
 
 malignant_df = df[df['diagnosis'] == 'M']
 benign_df = df[df['diagnosis'] == 'B']
