@@ -11,11 +11,15 @@ The dataset (`data.csv`) consists of the following:
 The Python script (`analysis.py`) performs the following tasks:
 1. **Data Loading**: Reads the dataset (`data.csv`) containing breast cancer diagnostic features.
 2. **Data Visualization**: Generates heatmaps to visualize correlations between features for malignant and benign diagnoses.
-3. **Model Training and Evaluation**: Performs logistic regression to predict breast cancer diagnosis based on selected features. It splits the dataset into training and testing sets, fits a logistic regression model, makes predictions, prints coefficients, and evaluates the model's accuracy using metrics like accuracy score and confusion matrix.
+3. **Model Training and Evaluation**: Performs logistic regression to predict breast cancer diagnosis based on selected features. It splits the dataset into training and testing sets, fits a logistic regression model, makes predictions, prints coefficients, and evaluates the model's accuracy using metrics like accuracy score and confusion matrix. 80% of the data was used to train the model, while the remaining 20% was used to test.
 
 ## Installation
 1. Clone or download the project repository.
 2. Ensure Python and the required libraries (Pandas, Matplotlib, Seaborn, and scikit-learn) are installed.
+   ```
+   cd <repo_name>
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 1. Place your dataset file (`data.csv`) in the same directory as the script.
